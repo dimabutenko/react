@@ -1,0 +1,36 @@
+:global(.card).stat {
+  border-radius: 0 0 0.5rem 0.5rem;
+  border-top: 0.2rem solid var(--clr-gb-6);
+  font-size: calc(var(--base-font) - 0.3rem);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  * {
+    color: var(--clr-gb-4);
+  }
+
+  .corner {
+    &:last-child {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    button:hover {
+      color: var(--clr-primary);
+    }
+  }
+
+  .filter {
+    display: flex;
+    justify-content: space-between;
+    font-weight: var(--fw-bold);
+
+    *:hover {
+      color: var(--clr-primary);
+    }
+
+    .on {
+      color: var(--clr-blue);
+    }
+  }
+}

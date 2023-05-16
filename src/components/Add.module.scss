@@ -1,0 +1,26 @@
+:global(.card).add-card {
+  margin: 4rem 0 2.5rem 0;
+  border-radius: 0.5rem;
+
+  .button {
+
+    :active {
+      transform: scale(0.95);
+    }
+
+    .icon {
+      color: var(--clr-white);
+    }
+  }
+
+  .input {
+    width: 100%;
+    padding: 0.7rem 0;
+    color: var(--clr-gb-1);
+
+    ::placeholder {
+      color: var(--clr-gb-5);
+      font-weight: var(--fw-normal);
+    }
+  }
+}
