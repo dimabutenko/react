@@ -4,20 +4,20 @@
   --fw-normal: 400;
   --fw-bold: 700;
   --img-bg: url("../public/bg-desktop-dark.jpg");
-  --clr-primary: hsl(0, 0%, 98%);
-  --clr-white: hsl(0, 0%, 100%);
-  --clr-page-bg: hsl(235, 21%, 11%);
-  --clr-card-bg: hsl(235, 24%, 19%);
-  --clr-blue: hsl(220, 98%, 61%);
-  --clr-green: hsl(192, 100%, 67%);
-  --clr-pink: hsl(280, 87%, 65%);
-  --clr-gb-1: hsl(236, 33%, 92%);
-  --clr-gb-2: hsl(234, 39%, 75%);
-  --clr-gb-3: hsl(234, 11%, 52%);
-  --clr-gb-4: hsl(237, 12%, 36%);
-  --clr-gb-5: hsl(233, 14%, 35%);
-  --clr-gb-6: hsl(235, 19%, 24%);
-  --clr-box-shadow: hsl(0, 0%, 0%, 0.1);
+  --clr-primary: rgb(250 250 250);
+  --clr-white: rgb(255 255 255);
+  --clr-page-bg: rgb(22 23 34);
+  --clr-card-bg: rgb(37 39 60);
+  --clr-blue: rgb(58 123 253);
+  --clr-green: rgb(87 221 255);
+  --clr-pink: rgb(192 88 243);
+  --clr-gb-1: rgb(228 229 241);
+  --clr-gb-2: rgb(166 171 216);
+  --clr-gb-3: rgb(119 122 146);
+  --clr-gb-4: rgb(81 82 103);
+  --clr-gb-5: rgb(77 80 102);
+  --clr-gb-6: rgb(50 52 73);
+  --clr-box-shadow: rgba(0 0 0 / 10%);
 }
 
 * {

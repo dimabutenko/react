@@ -1,13 +1,12 @@
 :global(.card).add-card {
-  margin: 4rem 0 2.5rem 0;
+  margin: 4rem 0 2.5rem;
   border-radius: 0.5rem;
 
   .button {
-
     :active {
       transform: scale(0.95);
     }
-
+    
     .icon {
       color: var(--clr-white);
     }
