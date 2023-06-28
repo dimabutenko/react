@@ -3,7 +3,7 @@ import styles from './Stat.module.scss'
 import { Filter } from '../store/filter'
 import { useAppDispatch, useAppSelector } from '../app/hooks'
 import { clearCompleted, todoState, updateFilter } from '../store/todoSlice'
-import Button from './atoms/Button'
+import Button from './button'
 
 const Stat: React.FC = () => {
   const todos = useAppSelector(todoState)

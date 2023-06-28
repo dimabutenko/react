@@ -6,8 +6,8 @@ import { useAppDispatch, useAppSelector } from '../app/hooks'
 import { remove, todoState, update } from '../store/todoSlice'
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
 import { type ITodo, type TodoState } from '../type'
-import Icon from './atoms/Icon'
-import Button from './atoms/Button'
+import Icon from './icon'
+import Button from './button'
 
 const Todos: React.FC = () => {
   const state: TodoState = useAppSelector(todoState)

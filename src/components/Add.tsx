@@ -3,9 +3,9 @@ import React, { useRef } from 'react'
 import { faCirclePlus } from '@fortawesome/free-solid-svg-icons/faCirclePlus'
 import { useAppDispatch } from '../app/hooks'
 import { add } from '../store/todoSlice'
-import Button from './atoms/Button'
-import Icon from './atoms/Icon'
-import TextInput from './atoms/TextInput'
+import Button from './button'
+import Icon from './icon'
+import TextInput from './textInput/TextInput'
 
 const Add: React.FC = () => {
   const inputRef = useRef<HTMLInputElement>(null)
