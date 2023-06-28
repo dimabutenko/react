@@ -25,15 +25,21 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "lint": "eslint --fix --ext .ts,.tsx ./src",
-    "husky-install": "husky install"
+    "test": "react-scripts test --coverage --watchAll=false",
+    "build:ci": "npm run build && npm run test",
+    "eject": "react-scripts eject"
   },
   "lint-staged": {
     "*.tsx": "eslint --fix",
     "*.scss": "stylelint --fix",
     "*.{tsx,json}": "prettier --write"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!<rootDir>/node_modules/",
+      "!<rootDir>/path/to/dir/"
+    ]
   },
   "eslintConfig": {
     "extends": [
