@@ -2,7 +2,7 @@ import React, { type ReactNode, type MouseEventHandler } from 'react'
 
 interface ButtonProps {
   class?: string | undefined
-  onClick: MouseEventHandler
+  onClick?: MouseEventHandler
   children: ReactNode
 }
 

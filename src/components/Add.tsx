@@ -5,6 +5,7 @@ import { useAppDispatch } from '../app/hooks'
 import { add } from '../store/todoSlice'
 import Button from './atoms/Button'
 import Icon from './atoms/Icon'
+import TextInput from './atoms/TextInput'
 
 const Add: React.FC = () => {
   const inputRef = useRef<HTMLInputElement>(null)
@@ -25,12 +26,12 @@ const Add: React.FC = () => {
 
   return (
     <div className={`card ${styles['add-card']}`}>
-      <input
+      <TextInput
         type="text"
-        ref={inputRef}
-        className={styles.input}
+        setInputRef={inputRef}
         placeholder="Create a new todo..."
         onKeyDown={handleKeyDown}
+        class={styles.input}
       />
       <Button class={styles.button} onClick={handleClick}>
         <Icon icon={faCirclePlus} size="2xl" class={styles.icon} />
