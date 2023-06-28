@@ -4,9 +4,10 @@ import { Filter } from '../store/filter'
 import styles from './Todos.module.scss'
 import { useAppDispatch, useAppSelector } from '../app/hooks'
 import { remove, todoState, update } from '../store/todoSlice'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
 import { type ITodo, type TodoState } from '../type'
+import Icon from './atoms/Icon'
+import Button from './atoms/Button'
 
 const Todos: React.FC = () => {
   const state: TodoState = useAppSelector(todoState)
@@ -37,12 +38,14 @@ const Todos: React.FC = () => {
               <input
                 type="checkbox"
                 checked={todo.completed}
-                onChange={(e) => { handleChange(e, todo) }}
+                onChange={(e) => {
+                  handleChange(e, todo)
+                }}
               />
               <p>{todo.name}</p>
-              <button onClick={() => dispatch(remove(todo.id))}>
-                <FontAwesomeIcon icon={faXmark} size="2xl" />
-              </button>
+              <Button onClick={() => dispatch(remove(todo.id))}>
+                <Icon icon={faXmark} size="2xl" />
+              </Button>
             </li>
           ))}
       </ul>
