@@ -28,8 +28,13 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint-staged": "lint-staged --config lint-staged.js",
+    "lint": "eslint --fix --ext .ts,.tsx ./src",
     "husky-install": "husky install"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx}": [
+      "npm run lint"
+    ]
   },
   "eslintConfig": {
     "extends": [
