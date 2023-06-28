@@ -1,12 +1,10 @@
-import React from "react";
-import "./Footer.module.scss";
+import React from 'react'
+import './Footer.module.scss'
 
-function Footer() {
-    return (
-        <footer>
-            <p>Drag and drop to reorder list</p>
-        </footer>
-    );
-}
+const Footer: React.FC = () => (
+  <footer>
+    <p>Drag and drop to reorder list</p>
+  </footer>
+)
 
-export default Footer;
+export default Footer

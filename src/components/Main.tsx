@@ -1,14 +1,12 @@
-import React from "react";
-import Add from "./Add";
-import Todos from "./Todos";
+import React from 'react'
+import Add from './Add'
+import Todos from './Todos'
 
-function Main() {
-    return (
-        <main>
-            <Add />
-            <Todos />
-        </main>
-    );
-}
+const Main: React.FC = () => (
+  <main>
+    <Add />
+    <Todos />
+  </main>
+)
 
-export default Main;
+export default Main

@@ -1,12 +1,12 @@
-import {Filter} from "./store/filter";
+import { Filter } from './store/filter';
 
 interface ITodo {
-    id: number;
-    name: string;
-    completed: bool;
+  id: number;
+  name: string;
+  completed: boolean;
 }
 
 type TodoState = {
-    todos: ITodo[];
-    filter: Filter
+  todos: ITodo[];
+  filter: Filter;
 };
