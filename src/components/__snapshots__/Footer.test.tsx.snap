@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer conpoonent tests Should render correctly 1`] = `
+<div>
+  <footer>
+    <p>
+      Drag and drop to reorder list
+    </p>
+  </footer>
+</div>
+`;

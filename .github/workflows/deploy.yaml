@@ -9,7 +9,8 @@ permissions:
   id-token: write
 
 jobs:
-  build:
+  test:
+    name: Test and Coverage
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -22,7 +23,8 @@ jobs:
           coverage-file: coverage/lcov.info
           minimum-coverage: 90
   deploy:
-    needs: build
+    name: Build and Deploy
+    needs: test
     environment:
       name: github-pages
       url: ${{ steps.build-publish.outputs.page_url }}

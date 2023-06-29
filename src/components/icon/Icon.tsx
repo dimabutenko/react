@@ -7,10 +7,16 @@ export interface IconProps {
   icon: IconDefinition
   size?: SizeProp | undefined
   class?: string | undefined
+  attributes?: any | undefined
 }
 
 const Icon: React.FC<IconProps> = (props: IconProps) => (
-  <FontAwesomeIcon icon={props.icon} size={props.size} className={props.class} />
+  <FontAwesomeIcon
+    icon={props.icon}
+    size={props.size}
+    className={props.class}
+    {...props.attributes}
+  />
 )
 
 export default Icon

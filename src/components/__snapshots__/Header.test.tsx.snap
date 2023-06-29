@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header conpoonent tests Should render correctly 1`] = `
+<div>
+  <header
+    class="card"
+  >
+    <h1>
+      TODO
+    </h1>
+  </header>
+</div>
+`;

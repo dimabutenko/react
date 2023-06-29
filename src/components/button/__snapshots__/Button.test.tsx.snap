@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button Should render correctly 1`] = `
+exports[`Button component tests Should render correctly 1`] = `
 <div>
   <button>
     Hello world
