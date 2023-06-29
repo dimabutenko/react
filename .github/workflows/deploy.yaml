@@ -16,10 +16,7 @@ jobs:
       - uses: actions/setup-node@v3
       - run: npm install
       - run: npm run test:coverage
-      - name: Code Coverage Summary Report
-        uses: irongut/CodeCoverageSummary@v1.3.0
-        with:
-          filename: ../../coverage/clover.xml
+      - uses: romeovs/lcov-reporter-action@v0.2.16
   deploy:
     environment:
       name: github-pages
